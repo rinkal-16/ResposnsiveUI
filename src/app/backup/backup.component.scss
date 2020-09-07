@@ -252,7 +252,8 @@ header {
           }
      }
 } 
-@media screen and (min-width: $mobile) {
+@media screen and (max-width: $mobile) {
+     
 	.collapsible-menu {
           display: none;
           img {
@@ -277,9 +278,11 @@ header {
 	.menu-content {
 		display: none;
      }
-     .column {
-          .text-block {
-               display: none;
+     .container-img {
+          .group-1 {
+               .column {
+                    display: none;
+               }
           }
      }
 
