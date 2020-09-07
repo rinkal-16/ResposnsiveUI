@@ -1,0 +1,35 @@
+body{
+     background-color: rgb(248, 249, 250);
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-right: 10px;
+     margin-left: 10px;
+     $font-family-sans-serif:
+     // Safari for OS X and iOS (San Francisco)
+     -apple-system,
+     // Chrome < 56 for OS X (San Francisco)
+     BlinkMacSystemFont,
+     // Windows
+     "Segoe UI",
+     // Android
+     "Roboto",
+     // Basic web fallback
+     "Helvetica Neue", Arial, sans-serif,
+     // Emoji fonts
+     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+}
+
+
+
+.chart {
+     background-color: white;
+     width: 1500px;  
+     font: italic small-caps bold 20px/1.5 "Proxima Nova", helvetica, arial, sans-serif;   
+     
+}
+
+
+
+
+
+
