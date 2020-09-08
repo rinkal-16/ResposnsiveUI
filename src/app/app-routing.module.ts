@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ChartComponent } from './chart/chart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ResponsiveLayoutComponent } from './responsive-layout/responsive-layout.component';
-import { BackupComponent } from './backup/backup.component';
+
 
 const routes: Routes = [
 { path: 'chart', component: ChartComponent},

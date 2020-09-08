@@ -52,6 +52,8 @@ $width: 100%;
           width: 700px;
      }
 }
+
+// Top Image section
 .group-1 {
      background: url("../../assets/images/Path8193.svg"), url("../../assets/images/MaskGroup17.png");
      background-repeat: no-repeat, no-repeat; 
@@ -62,7 +64,6 @@ $width: 100%;
      height: 600px;
      width: 1000px; 
      .text-block  {
-       //flex-direction: column;
        text-align: left;
        background-color: transparent;
        top: 40%;
@@ -113,10 +114,8 @@ $width: 100%;
           width: 700px;
      }
 }  
- @media screen and (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
       .text-block {          
-          //margin-top: 10px;
-          // margin-top: 20%;
           top: 10%;
           left: 50%;
           transform: translate(-10%, -50%);
@@ -164,6 +163,7 @@ $width: 100%;
              }
       } 
  }
+
 header {
 	display: flex;
 	height:  40px;
@@ -326,8 +326,12 @@ input:checked ~ .menu-content {
      input:checked ~ .menu-content {
          max-height: 40%;
      }
-     .column {
-          display: none;
+     .container-img {
+          .group-1 {
+               .column {
+                    display: none;
+               }
+          }
      }
 	// label {
 	// 	display: none;
@@ -343,6 +347,7 @@ input:checked ~ .menu-content {
      }
 }
 
+// Service section
 .container-2 {
      //width: $width;
      display: flex;
@@ -422,13 +427,12 @@ input:checked ~ .menu-content {
           margin-right: 20px;
           padding-top: 30px;  
           background-position: center;       
-          // .row {
-          //      margin-bottom: 30px;
-          //      height: fit-content;
-          //      width:300px;
-          //      margin-left: 20px;
-          //      margin-right: 20px;
-          // }
+          .row {
+               //margin-bottom: 30px;
+               height: fit-content;
+               width:300px;
+               
+          }
           .service {
                justify-content: center;
                justify-items: center;
@@ -447,7 +451,7 @@ input:checked ~ .menu-content {
           }
           .card {
                text-align: left;
-               width: 270px;
+               width: 300px;
                .card-1 {
                     justify-content: center;
                     align-items: center;
@@ -543,20 +547,9 @@ input:checked ~ .menu-content {
                          }
                     }
                }   
-             }
-              
-              
-               
-         }
-         
-          //     .row-cards {
-          //          width: 300px;
-          //          height: 140px;
-          //          align-content: center;
-          //     }
-         
+             }    
+         }    
     }
-
 }
 
 .group-2 {
