@@ -9,7 +9,6 @@ const routes: Routes = [
 { path: 'chart', component: ChartComponent},
 { path: 'dashboard', component: DashboardComponent},
 { path: 'template', component: ResponsiveLayoutComponent},
-{ path: 'backup', component: BackupComponent},
 { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 

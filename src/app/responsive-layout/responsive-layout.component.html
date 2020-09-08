@@ -15,19 +15,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
- 
- 
+
 <div  class="flex-container wrapper">
      <div class="flex-item">
-          <!--Header-->
-          <div class="container-img">
-               <div class="group-1">     
-                    <div class="collapsible-menu">
+
+     <!--Header Section-->
+     <div class="container-img">
+          <div class="group-1"> 
+               <div class="collapsible-menu">
                          <input type="checkbox" id="menu">
                          <label for="menu">
-                         <img class="collaspe-icon" src="../../assets/images/collapse.jpeg" alt=""></label>
+                         <img src="../../assets/images/collapse.jpeg" alt="" width="20px" height="20px"></label>
                          <div class="menu-content">
-                              <ul>
+                              <ul class="list-unstyled">
                                    <li><a class="active" href="#">Home</a></li>
                                    <li><a href="#">Services</a></li>
                                    <li><a href="#">My Story</a></li>
@@ -36,16 +36,18 @@
                                    <li><a href="#">Reviews</a></li>
                               </ul>
                          </div>
-                    </div>   
+               </div>
+               
                     
+               <div class="column">     
                     <header>
                          <nav class="col-md-12">
                               <div class="nav-area">
                                    <div class="col-md-3">
                                         <img class="svg-class" src="../../assets/images/MarkAntony.svg" alt="" />
                                    </div> 
-                                   <div class="col-md-7">    
-                                        <ul>
+                                   <div class="col-md-6 menu">    
+                                        <ul class="list-unstyled" style="display: flex;" >
                                              <li><a class="active">Home</a></li>
                                              <li><a>Services</a></li>
                                              <li><a>My Story</a></li>
@@ -53,8 +55,8 @@
                                              <li><a>Portfoilo</a></li>
                                              <li><a>Reviews</a></li>  
                                         </ul>
-                                   </div>
-                                   <div class="col-md-2">
+                                   </div>                                        
+                                   <div class="col-md-3">
                                         <ul class="nav-area-2 ml-auto">                          
                                              <button class="btn default rounded-0">Contact me</button>
                                              
@@ -63,36 +65,36 @@
                               </div>
                          </nav>                         
                     </header>
-                   
                     <div class="text-block">                         
-                              <h6>Hello, I am </h6>
-                              <h1><b>Mark Anatony</b></h1>
-                              <h6>Ux Designer and Developer</h6> 
-                              <br>
-                              <br>                          
-                              <button class="btn default rounded-0">Get started</button>                          
+                         <h6>Hello, I am </h6>
+                         <h1><b>Mark Anatony</b></h1>
+                         <h6>Ux Designer and Developer</h6> 
+                         <br>
+                         <br>                          
+                         <button class="btn default rounded-0">Get started</button>                          
                     </div>
-                        
-               </div>
+               </div>     
           </div>
-          <!--Services-->
-          <div class="container-2 wrapper">  
-               <div class="row service">             
-                    <div class="col-lg-4 col-sm-6 col-md-12">
-                         <div class="card">
-                              <div class="card-1">
-                                   <article class="card-content">
-                                        <div class="card-body">                                            
-                                             <h3><b>My Services</b></h3>
-                                             <p><small>I am highly experienced web designer and developer. I also provide photography and Videography service. I have done lots of design project for big organisation as well as various smaller startups. I love to help those people who want a creative and modern looking website design. I made 200 videos and 600 types of photography.</small></p>
-                                             <button>Hire Me</button>                                         
-                                        </div>
-                                   </article> 
-                              </div>                        
-                         </div>  
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-12">                                           
-                         <div class="row">
+     <div> 
+
+     <!--Service-->
+      <div class="container-2">  
+          <div class="row service" style="flex-direction: column; display: flex; flex-wrap: wrap;"> 
+               <div class="col-lg-4 col-sm-6 col-md-12 xyz" style="flex-direction: row">
+                    <div class="card">
+                         <div class="card-1">
+                              <article class="card-content">
+                                   <div class="card-body">                                            
+                                        <h3><b>My Services</b></h3>
+                                        <p><small>I am highly experienced web designer and developer. I also provide photography and Videography service. I have done lots of design project for big organisation as well as various smaller startups. I love to help those people who want a creative and modern looking website design. I made 200 videos and 600 types of photography.</small></p>
+                                        <button>Hire Me</button>                                         
+                                   </div>
+                              </article> 
+                         </div>                        
+                    </div>  
+               </div>
+               <div class="col-lg-4 col-sm-6 col-md-12 xyz" style="flex-direction: column; display: flex; flex-wrap: wrap; margin-right: 15px;">                                           
+                         <div class="row" style="padding-bottom: 15px;">
                               <div class="card"> 
                                    <div class="row-cards">                                     
                                         <article class="card-content">
@@ -107,12 +109,12 @@
                                    </div> 
                               </div>                                
                          </div>
-                         <div class="row">
+                         <div class="row" >
                               <div class="card"> 
                                    <div class="row-cards">                                     
                                         <article class="card-content">
                                              <div class="card-body"> 
-                                                  <div style="display: flex;">
+                                                  <div style="display: flex; ">
                                                        <img src="../../assets/images/videography.png" style="width: 30px; height: 30px; text-align: center" />
                                                        <h5 style="margin-left: 10px;"><b>Videography</b></h5>
                                                   </div>                                                                     
@@ -123,8 +125,8 @@
                               </div>
                          </div>                      
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-md-12">
-                         <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-md-12 xyz" style="flex-direction: column; display: flex; flex-wrap: wrap;">
+                         <div class="row" style="padding-bottom: 15px;">
                               <div class="card">   
                                    <div class="row-cards">              
                                         <article class="card-content">                                                           
@@ -155,49 +157,50 @@
                               </div>     
                          </div>                         
                     </div>
-               </div>    
           </div>
+      </div>         
 
-          <!--Image-2-->
-          <div class="container-img">
-               <div class="group-2">
-                    <div class="media-player">
-                       <img src="../../assets/images/Group8468.svg" alt="" /> 
-                    </div>                    
-               </div>
+
+     <!--Image-2-->
+     <div class="container-img">
+          <div class="group-2">
+               <div class="media-player">
+                    <img src="../../assets/images/Group8468.svg" alt="" /> 
+               </div>                    
           </div>
+     </div>
 
-          <!--My Skills-->
-          <div class="container-3">
-               <div class="group-3">
-                    <div class="row">
-                         <div class="heading">
-                              <h3><b>My Skills</b></h3>
-                              <p><center>I am using various digital tool for my services. Most are adobe product. Check out my <br> skill level from below graphs.</center></p>
-                         </div>
+     <!--Skill-->
+     <div class="container-3">
+          <div class="group-3">
+               <div class="row">
+                    <div class="heading-skill">
+                         <h3><b>My Skills</b></h3>
+                         <p><center>I am using various digital tool for my services. Most are adobe product. Check out my <br> skill level from below graphs.</center></p>
                     </div>
-                    <div class="row"> 
-                         <div class="skill-set">
-                              <div class="column">
-                                   <div class="row">
-                                        <div class="single-chart">
-                                             <svg viewBox="0 0 36 36" class="circular-chart pink">
-                                                  <path class="circle-bg"
-                                                  d="M18 2.0845
-                                                       a 15.9155 15.9155 0 0 1 0 31.831
-                                                       a 15.9155 15.9155 0 0 1 0 -31.831"
-                                                  />
-                                                  <path class="circle"
-                                                  stroke-dasharray="75, 100"
-                                                  d="M18 2.0845
-                                                       a 15.9155 15.9155 0 0 1 0 31.831
-                                                       a 15.9155 15.9155 0 0 1 0 -31.831"
-                                                  />
-                                                  <text x="18" y="20.35" class="percentage">75%</text>
-                                             </svg>
-                                             <p>Adobe xd</p>
-                                        </div>                                       
-                                        <div class="single-chart">
+               </div>
+               <div class="row"> 
+                    <div class="skill-set" style="display: flex;">
+                         <div class="column">
+                              <div class="row" style="display: flex; ">
+                                   <div class="single-chart">
+                                        <svg viewBox="0 0 36 36" class="circular-chart pink">
+                                             <path class="circle-bg"
+                                             d="M18 2.0845
+                                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                                             />
+                                             <path class="circle"
+                                             stroke-dasharray="75, 100"
+                                             d="M18 2.0845
+                                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                                             />
+                                             <text x="18" y="20.35" class="percentage">75%</text>
+                                        </svg>
+                                        <p>Adobe xd</p>
+                                   </div>
+                                   <div class="single-chart">
                                              <svg viewBox="0 0 36 36" class="circular-chart purple">
                                                   <path class="circle-bg"
                                                   d="M18 2.0845
@@ -213,8 +216,8 @@
                                                   <text x="18" y="20.35" class="percentage">70%</text>
                                              </svg>
                                              <p>Adobe Iillustrator</p>
-                                        </div>                                       
-                                        <div class="single-chart">
+                                   </div>                                       
+                                   <div class="single-chart">
                                              <svg viewBox="0 0 36 36" class="circular-chart blue">
                                                   <path class="circle-bg"
                                                   d="M18 2.0845
@@ -230,8 +233,8 @@
                                                   <text x="18" y="20.35" class="percentage">95%</text>
                                              </svg>
                                              <p>Adobe Photoshop</p>
-                                        </div>                                        
-                                        <div class="single-chart">
+                                   </div>                                        
+                                   <div class="single-chart">
                                              <svg viewBox="0 0 36 36" class="circular-chart green">
                                                   <path class="circle-bg"
                                                   d="M18 2.0845
@@ -247,8 +250,8 @@
                                                   <text x="18" y="20.35" class="percentage">60%</text>
                                              </svg>
                                              <p>Adobe Indesign</p>
-                                        </div>                                       
-                                        <div class="single-chart">
+                                   </div>                                       
+                                   <div class="single-chart">
                                              <svg viewBox="0 0 36 36" class="circular-chart yellow">
                                                   <path class="circle-bg"
                                                   d="M18 2.0845
@@ -264,19 +267,20 @@
                                                   <text x="18" y="20.35" class="percentage">85%</text>
                                              </svg>
                                              <p>Adobe After Effects</p>
-                                        </div>                                   
-                                   </div>     
-                              </div> 
+                                   </div>      
+                              </div>
                          </div>
-                    </div>   
-               </div>   
+                    </div>
+               </div>               
           </div>
+     </div>          
 
-          <!--My Portfolio-->
-          <div class="container-4">
+
+     <!--portfoilo-->
+     <div class="container-4">
                <div class="group-4">
                     <div class="row">
-                         <div class="heading">
+                         <div class="heading-portfoilo">
                               <h3><b>My Portfoilo</b></h3>
                               <p>The portfoilo is conveying quality and experience of my services. See my portfoilo to <br> understand how qualifyed and experienced I am.</p>
                          </div>
@@ -317,18 +321,20 @@
                </div>
           </div>     
 
-          <!--My Client -->
-          <div class="container-5">
+
+     
+     <!--Client-->
+     <div class="container-5">
                <div class="group-5">                    
                          <div class="row">
-                              <div class="heading">
+                              <div class="heading-client">
                                    <h3><b>What my client say</b></h3>
                                    <p>Check out what clients say about my services. Happy clients all over the world, Share <br> your experience with me by submitting your reviews.</p>
                               </div>
                          </div>
                          
-                         <div class="row">                    
-                              <div class="col-lg-4 col-sm-6 col-md-12">
+                         <div class="row" style="display: flex; flex-wrap: wrap; wrap-direction: row;">                    
+                              <div class="col-lg-4 col-sm-6 col-md-12" style="align-item: center; display: flex; flex-direction: row; flex-wrap: wrap; ">
                                    <div class="card">
                                         <div class="card-content">
                                              <div class="card-body">
@@ -350,7 +356,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="col-lg-4 col-sm-6 col-md-12">
+                              <div class="col-lg-4 col-sm-6 col-md-12" style="align-item: center; display: flex; flex-direction: row; flex-wrap: wrap;">
                                    <div class="card">
                                         <div class="card-content">
                                              <div class="card-body">
@@ -371,7 +377,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="col-lg-4 col-sm-6 col-md-12">
+                              <div class="col-lg-4 col-sm-6 col-md-12" style="align-item: center; display: flex; flex-direction: row; flex-wrap: wrap; ">
                                    <div class="card">
                                         <div class="card-content">
                                              <div class="card-body">
@@ -400,11 +406,12 @@
                
           </div>  
 
+
           <!--Hire me-->
           <div class="group-6">
                <div class="row">
                     <div class="content">
-                         <p><b>I am available for new projects. Want to wark with me?</b></p>
+                         <p><b>I am available for new projects. Want to work with me?</b></p>
                     </div> 
 
                     <div class="content">     
@@ -414,7 +421,8 @@
 
           </div>
 
-          <!--Footer-->            
+
+     <!--Footer-->            
           <footer class="site-footer">
                <div class="container">
                     <div class="row">
@@ -496,10 +504,9 @@
                </div>
           </footer>
 
+
+
+
+
      </div>
-</div>
-
-
-    
-
-     
+</div>     

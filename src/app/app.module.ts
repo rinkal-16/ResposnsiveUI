@@ -16,11 +16,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from "@angular/material/icon";
 import { FooterComponent } from './footer/footer.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-
 import { JwPaginationModule } from 'jw-angular-pagination';
-
 import { ResponsiveLayoutComponent } from './responsive-layout/responsive-layout.component';
-import { BackupComponent } from './backup/backup.component';
+
 
 
 @NgModule({
@@ -31,10 +29,7 @@ import { BackupComponent } from './backup/backup.component';
     DashboardComponent,
     FooterComponent, 
     ResponsiveLayoutComponent, 
-    BackupComponent,
-    
-    
-    
+ 
   ],
   imports: [
     BrowserModule,
