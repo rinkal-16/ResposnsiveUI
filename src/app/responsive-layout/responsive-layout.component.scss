@@ -3,6 +3,9 @@ $tablet: 768px;
 $mobile: 480px;
 $height: 700px;
 $width: 100%;
+* {
+     font: 'Roboto' !important;/* <-- fonts */
+}
 
 .flex-container {
      display: flex;
@@ -25,7 +28,7 @@ $width: 100%;
 }
 @media screen and (max-width: $mobile) {
      .wrapper {
-          width: 400px;
+          width: 480px;
      }
 }
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
@@ -43,7 +46,7 @@ $width: 100%;
 @media screen and (max-width: $mobile) {
      .container-img {
           height: 300px;
-          width: 400px;
+          width: 480px;
      }     
 }
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
@@ -102,7 +105,7 @@ $width: 100%;
 @media screen and (max-width: $mobile) {
      .group-1 {
           height: 300px;
-          width: 400px;
+          width: 480px;
           .text-block {          
                top: 10%;
                left: 50%;
@@ -174,6 +177,7 @@ header {
      display: flex;
      .menu {
           padding: 0px 5px;
+          margin: 10px 10px;
      }
      justify-content: center;
      ul {
@@ -187,8 +191,9 @@ header {
        justify-items: auto;
        //text-size-adjust: 14px;
        font-size: 14px;
-       margin-left: 5px;
-       margin-right: 5px;
+       margin-left: 15px;
+       //margin-right: 5px;
+       font-family: "Roboto";
      }   
 }
 .nav-area-2 {
@@ -251,15 +256,20 @@ header {
 	margin-top: 7px;
 	margin-left: 7px;
 	width: 30px;
-	height: 30px;
+     height: 30px;
+     justify-content: left;
 }
 label {
 	margin-top: 20px;
-	vertical-align: center;
-	align-items: center;
+	vertical-align: left;
+	align-items: left;
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 10px;
     cursor: pointer;
+    img {
+         align-items: left;
+         justify-items: left;
+    }
 }
 input#menu {
     display: none;
@@ -557,7 +567,7 @@ input:checked ~ .menu-content {
 }   
 @media screen and (max-width: $mobile) {
      .group-2 {
-          height: 250px;
+          height: 300px;
           
           .media-player img {
                margin-top: -10px;
@@ -970,7 +980,7 @@ input:checked ~ .menu-content {
      flex: 1;
      margin-right: auto;
      margin-left: auto;
-     padding-bottom:40px;
+     padding-bottom:20px;
      padding-top: 70px;
      background-position: center; 
 }
@@ -1023,6 +1033,7 @@ input:checked ~ .menu-content {
              .media {
                .media-body {
                  padding-top: 10px;
+
                }
              }
            }
