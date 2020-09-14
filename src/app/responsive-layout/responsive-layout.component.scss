@@ -1,15 +1,13 @@
 $laptop: 992px;
 $tablet: 768px;
 $mobile: 480px;
-$height: 700px;
-$width: 100%;
+
 * {
      font: 'Roboto' !important;/* <-- fonts */
      margin: 0;
      padding: 0;
      box-sizing: border-box;
      opacity: 1;
-     
 }
 .main-class {
      display: flex;
@@ -59,14 +57,14 @@ $width: 100%;
 }
 @media screen and (max-width: $mobile) {
      .container-img {
-          height: 300px;
-          width: 480px;
+          height: 250px;
+          width: 100%; //480px
      }     
 }
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
      .container-img {
           height: 500px;
-          width: 767px;
+          width: 100%; //767px;
      }
 }
 @media screen and (min-width: $tablet) and (max-width: 1140px) {
@@ -79,6 +77,10 @@ $width: 100%;
      background: url("../../assets/images/Path8193.svg"), url("../../assets/images/MaskGroup17.png");
      background-repeat: no-repeat, no-repeat; 
      background-position: top, top;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
      background-size: 100%;
      filter: brightness(100%);
      opacity: 1; 
@@ -125,7 +127,7 @@ $width: 100%;
 }
 @media screen and (max-width: $mobile) {
      .group-1 {
-          height: 300px;
+          height: 250px;
           width: 100%;
           .text-block {          
                top: 20%;
@@ -675,7 +677,7 @@ input:checked ~ .menu-content {
      background-size: 100%;
      filter: brightness(100%);
      opacity: 1; 
-     height: 750px;
+     height: 100%; //750px;
      width: 100%;
      position: relative; 
      margin: 0;
@@ -747,8 +749,9 @@ input:checked ~ .menu-content {
           }
      }
 }
-@media screen and (min-width: 900px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) {
      .group-2 {
+          height: 100%;
           .media-player img {
                width: 120px;
                height: 120px;
@@ -1019,7 +1022,7 @@ input:checked ~ .menu-content {
              .row {
                   .gallery {
                        .column {
-                            width: 80px;
+                            //width: 80px;
                             flex-wrap: wrap;
                             flex-direction: column;
                        }
@@ -1198,7 +1201,7 @@ input:checked ~ .menu-content {
 
 // Client section
 .container-5 {
-     width: $width;
+     width: 100%;
      height: 100%;
      display: flex;
      align-items: center;
@@ -1211,11 +1214,20 @@ input:checked ~ .menu-content {
      background-position: center; 
 }
 .group-5 {
+     display:flex;
+     flex-wrap: wrap;
+     background-position: center; 
+     margin: auto;
+     justify-content: center;
      background-size: cover;
      opacity: 1; 
      width: 70%; //900px;
      background-position: center; 
-     margin: 50px 50px;
+     justify-content: center;
+     align-items: center;
+     margin-left: 30px;
+     margin-right: 30px;
+     //margin: 50px 50px;
      .heading-client {
        padding-top: 0;
        text-align: center;
@@ -1234,8 +1246,11 @@ input:checked ~ .menu-content {
        }
      }
      .row {
-           //width: 80%; //300px;
-           
+          display:flex;
+          flex-wrap: wrap;
+          background-position: center; 
+          margin: auto;
+          justify-content: center;
            display: flex;
            flex-wrap: wrap;
            margin-bottom: auto;
@@ -1282,13 +1297,14 @@ input:checked ~ .menu-content {
           }
          }
 }
-
 @media screen and (max-width: $mobile) {
      .container-5 {
           margin: 0px 0px;
           .group-5 {
-               width: 400px;
+               width: 100%; //400px;
                //margin: 15px 15px;
+               margin-left: 20px;
+               margin-right: 20px;
                .heading-client {
                     h3 {
                          font-size: 20px
@@ -1312,11 +1328,12 @@ input:checked ~ .menu-content {
           align-items: center;
           justify-content: center;
           justify-items: center;
+          background-position: center;
           .row {
                margin-left: 20px;
                margin-right: 20px;
-               margin-top: 20px;
                margin-bottom: 20px;
+              
           }
           .heading-client {
                h3 {
@@ -1522,7 +1539,7 @@ input:checked ~ .menu-content {
           padding-left: 50px;
           padding-right: 50px;
           .container {
-               margin-right: 45px;
+               //margin-right: 45px;
                width: 100%;
                padding-top: 20px;
                padding-bottom: 20px;
