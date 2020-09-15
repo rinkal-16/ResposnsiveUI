@@ -437,8 +437,8 @@ header {
 @media screen and (min-width: 800px) and (max-width: 980px) {
      .nav-area {
           h1 {
-               margin-right: 30px;
-               font-size: 24px;
+               margin-right: 20px;
+               font-size: 20px;
                font-weight: bold;
           }
           .menu {
@@ -1055,7 +1055,7 @@ input:checked ~ .menu-content {
 }
 @media screen and (min-width: 767px) and (max-width: 950px) {
      .skill-set {
-          width: 500px;
+          width: 600px;
           .column {
                .row{
                     justify-items: center;
@@ -1374,6 +1374,24 @@ input:checked ~ .menu-content {
           }
      }
          
+}
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+     .row {
+          justify-content: center;
+          .gallery-img {
+               width: 800px;
+               img {
+                    width: 100%;
+               }
+               .row {
+                    width: 700px;
+                    justify-content: center;
+                    justify-items: center;
+                    margin-left: 50px;
+                    margin-right: 50px;
+               }
+          }
+     }  
 }
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
      .row {
