@@ -46,13 +46,7 @@ $mobile: 480px;
      width: 100%;
      height: 100%; //700px;
 }
-@media screen and (max-width: $mobile) {
-     .container-img {
-          height: 270px;
-          
-     }     
-}
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
+@media screen and (min-width: 550px) and (max-width: $tablet) {
      .container-img {
           height: 400px; 
 
@@ -142,13 +136,27 @@ $mobile: 480px;
      }
 }
 @media screen and (min-width: $mobile) and (max-width: 550px) {
-     .group-1 {
+     .container-img {
           height: 350px;
+          width: 100%;
+     }
+     .group-1 {
+          //width: 100%;
+          height: 350px;
+          .nav-area {
+               display: none;
+               visibility: hidden;
+          }
+          .nav-area-2 {
+               display: none;
+               visibility: hidden;
+          }
           .text-block {          
-               top: 60%;
+               top: 45%;
                left: 60%;
-               transform: translate(-60%, -60%);
+               transform: translate(-45%, -60%);
                line-height: 60%;
+               position: absolute;
                h6 {
                     line-height: 60%;
                     font-size: 12px;
@@ -168,7 +176,7 @@ $mobile: 480px;
                     margin: 0;              
                   }
            } 
-     
+          
      }
 } 
 @media screen and (min-width: 550px) and (max-width: $tablet) {
@@ -328,29 +336,7 @@ header {
           margin-left: 80px;   
      }
 }  
-@media screen and (max-width: 550px) {
-     .nav-area {
-          display: none;
-          visibility: hidden;
-     }
-     .nav-area-2 {
-          // height: 20px;
-          // button {
-          //      height: 20px;
-          //      .btn {
-          //           margin-left: 20px;
-          //           width: 80px;
-          //      }
-          // }
-          display: none;
-          visibility: hidden;
-     }
-     .text-block {
-          display: none;
-          visibility: hidden;
-     }
-     
-}
+
 @media screen and (min-width: 550px) and (max-width: 600px) {
      .nav-area {
           h1 {
@@ -553,6 +539,7 @@ input#menu {
 input:checked ~ .menu-content {
     max-height: 40%;
 }
+
 @media screen and (max-width: $mobile) {	
 	.collaspe-icon {
           margin-top: 15px;
@@ -562,7 +549,7 @@ input:checked ~ .menu-content {
           }
      }
      .collapsible-menu {
-          background-color: #6048FF;
+          background-color: blue;
      }
      
      label {
@@ -575,6 +562,7 @@ input:checked ~ .menu-content {
      }
      input#menu {
          display: none;
+         visibility: hidden;
      }
      .menu-content {
          max-height: 0;
@@ -585,17 +573,18 @@ input:checked ~ .menu-content {
               text-align: center;
          }
          li, a {
-              color: #aba;
+              color: blue;
               font-size: 14px;
          }
      }
      input:checked ~ .menu-content {
-         max-height: 40%;
+         max-height: 50%;
      }
      .container-img {
           .group-1 {
                .column {
                     display: none;
+                    visibility: hidden;
                }
           }
      }
@@ -603,10 +592,13 @@ input:checked ~ .menu-content {
           display: none;
           visibility: hidden;
      }
-     .text-block {
-          display: none;
-          visibility: hidden;
+     .group-1 {
+          .text-block {
+               display: none;
+               visibility: hidden;
+          }
      }
+     
 }
 
 @media screen and (min-width: $tablet) {
@@ -710,17 +702,27 @@ input:checked ~ .menu-content {
           }         
      }
 }
+// @media screen and (min-width: 690px) and (max-width: 767px) {
+//      .container-2 {
+//           .sub-cards {
+//                width: 640px;
+//                .card {
+//                     width: 640px;
+//                }
+//           }
+//      }
+// }
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
     .container-2 {
-         height: fit-content;
-         
+         height: fit-content;         
          justify-content: center;
          justify-items: center;
          align-content: center;
          align-items: center;
          justify-self: center;
          float: center;
-         .service {              
+         .service {   
+              width: 90%;           
               height: fit-content;
               justify-content: center;
               align-content: center;
@@ -729,32 +731,24 @@ input:checked ~ .menu-content {
               display: flex;
               flex-wrap: wrap;
               flex-direction: column;
-              .card {
-                   width: 100%;
-              }
               .sub-cards {              
-                    height: 140px;
-                    max-width: 520px;
-                    display: -webkit-flex; /* Safari */		
-                    display: flex; /* Standard syntax */               
-               .item-1 {
-                    
-                    -webkit-order: 1; /* Safari 6.1+ */
+                    //height: 140px;
+                    display: -webkit-flex; 		
+                    display: flex;              
+               .item-1 {                   
+                    -webkit-order: 1; 
                     order: 1;
                }
-               .item-2 {
-                    
-                    -webkit-order: 2; /* Safari 6.1+ */
+               .item-2 {                    
+                    -webkit-order: 2; 
                     order: 2;
                }
-               .item-3 {
-                    
-                    -webkit-order: 3; /* Safari 6.1+ */
+               .item-3 {                   
+                    -webkit-order: 3; 
                     order: 3;
                }
-               .item-4 {
-                    
-                    -webkit-order: 4; /* Safari 6.1+ */
+               .item-4 {                   
+                    -webkit-order: 4; 
                     order: 4;
                }
               }
@@ -762,6 +756,7 @@ input:checked ~ .menu-content {
         
          }    
 }
+
 @media screen and (min-width: 767px) and (max-width: 920px) {
      .container-2 {
           height: fit-content;         
@@ -771,7 +766,8 @@ input:checked ~ .menu-content {
           align-items: center;
           justify-self: center;
           float: center;
-          .service {               
+          .service { 
+                           
                height: fit-content;
                justify-content: center;
                align-content: center;
@@ -780,11 +776,6 @@ input:checked ~ .menu-content {
                display: flex;
                flex-wrap: wrap;
                flex-direction: column;
-               .col-sm {
-                    .row {
-                        
-                    }
-               }
                .sub-cards {              
                      height: 140px;                    
                      display: -webkit-flex; 	
@@ -817,13 +808,14 @@ input:checked ~ .menu-content {
 @media screen and (min-width: 920px) and (max-width: 1170px) {
      .container-2 {
           .service {
-               width: 90%;
+               width: 90%; //90%;
           }
      }
 }
 @media screen and (min-width: 1030px) and (max-width: 1055px) {
      .container-2 {
           .service {
+               
                .sub-cards {
                     height: 160px;
                }
@@ -833,6 +825,7 @@ input:checked ~ .menu-content {
 @media screen and (min-width: 950px) and (max-width: 1000px) {
      .container-2 {
           .service {
+               
                .sub-cards {
                     height: 170px;
                     .card {
@@ -845,6 +838,7 @@ input:checked ~ .menu-content {
 @media screen and (min-width: 1170px) and (max-width: 1200px) {
      .container-2 {
           .service {
+               
                .sub-cards {
                     height: 180px;
                     .card {
@@ -862,6 +856,7 @@ input:checked ~ .menu-content {
 @media screen and (min-width: 1275px) and (max-width: 1350px) {
      .container-2 {
           .service {
+               
                .sub-cards {
                     height: 180px;
                     .card {
@@ -879,6 +874,7 @@ input:checked ~ .menu-content {
 @media screen and (min-width: 1500px) and (max-width: 1550px) {
      .container-2 {
           .service {
+              
                .sub-cards {
                     height: 170px;
                     .card {
@@ -1059,7 +1055,14 @@ input:checked ~ .menu-content {
 }
 @media screen and (max-width: $mobile) {
      .group-3 {
-          width: 400px;
+          width: 70%;
+     }
+}
+@media screen and (min-width: $mobile) and (max-width: 767px) {
+     .container-3 {
+          .group-3 {
+               width: 100%;
+          }
      }
 }
 @media screen and (min-width: 767px ) and (max-width: 950px ) {
@@ -1873,65 +1876,68 @@ input:checked ~ .menu-content {
      .row {
        margin-left: auto;
        margin-right: auto;
-     }
-     p{
-          color: #4A4A4A;
-          font-size: 16px;
-          text-align: left;
-          font: normal normal 900 Roboto;
-          vertical-align: center;
-     }
-     
-}
-.content {
-     display: flex;
-     flex-wrap: wrap;
-     justify-items: center;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     margin: auto;
-     align-content: center;
-     justify-content: center;
-     background-color: #FFFFFF;
-     div {
-       text-align: right;
-     }
-     button {
-          background-color: #7FFF00;
-          color: white;
-          border: white;
-          width: 120px;
-          height: 40px;
-          
-        }
-     
-}  
+       .content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-items: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          margin: auto;
+          align-content: center;
+          justify-content: center;
+          background-color: #FFFFFF;
+          div {
+            text-align: right;
+          }
+          p{
+               color: #4A4A4A;
+               font-size: 16px;
+               text-align: left;
+               font: normal normal 900 Roboto;
+               vertical-align: center;
+          }
+          button {
+               background-color: #7FFF00;
+               color: white;
+               border: white;
+               width: 120px;
+               height: 40px;               
+             }
+       }
+     }    
+} 
 @media screen and (max-width: $mobile) {
      .group-6 {
           width: 80%;
           p {
                font-size: 14px;
           }
-          .content button {
-               width: 80px;
-               height: 30px;
-               
-          }
-     }
-     .content {
-          padding-top: 10px;
-          padding-bottom: 10px;
+          .content {
+               padding-top: 10px;
+               padding-bottom: 10px;
+               button {
+                    width: 80px;
+                    height: 30px;               
+               }
+          } 
      }
 }
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
      .group-6 {
           width: 80%;
+          .content {
+               padding-top: 15px;
+               padding-bottom: 15px;
+          }
           p {
-               font-size: 16px;
+               font-size: 14px;
+               font-weight: 500;
           }
           .content button {
               justify-content: center;
               text-align: center;
+              height: 30px;
+              width: 100px;
           }
      }
 } 
