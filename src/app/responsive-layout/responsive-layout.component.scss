@@ -672,7 +672,7 @@ input:checked ~ .menu-content {
          justify-self: center;
          float: center;
          .service {   
-              width: 90%;           
+              width: 80%;           
               height: fit-content;
               justify-content: center;
               align-content: center;
@@ -716,7 +716,7 @@ input:checked ~ .menu-content {
           justify-self: center;
           float: center;
           .service { 
-                           
+               width: 70%;            
                height: fit-content;
                justify-content: center;
                align-content: center;
@@ -725,8 +725,7 @@ input:checked ~ .menu-content {
                display: flex;
                flex-wrap: wrap;
                flex-direction: column;
-               .sub-cards {              
-                     height: 140px;                    
+               .sub-cards {                                
                      display: -webkit-flex; 	
                      display: flex;                
                 .item-1 {
@@ -1699,8 +1698,8 @@ input:checked ~ .menu-content {
           }
           .card {
                display: flex;
-               height: 150px;
-               width: 350px; 
+               // height: 150px;
+               // width: 350px; 
                justify-content: center;
                justify-items: center;   
                .card-content{
