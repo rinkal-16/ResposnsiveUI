@@ -78,7 +78,11 @@ $mobile: 480px;
           height: 800px;
      }
 }
-
+@media screen and (min-width: 1600px) {
+     .container-img {
+          height: 1000px;
+     }
+}
 // Top Image section
 .group-1 {
      background: url("../../assets/images/Path8193.svg"), url("../../assets/images/MaskGroup17.png");
@@ -263,7 +267,11 @@ $mobile: 480px;
           height: 900px;
      }
 }
-
+@media screen and (min-width: 1600px) {
+     .group-1 {
+          height: 1000px;
+     }
+}
 header {
 	display: flex;
 	height:  40px;
@@ -348,7 +356,7 @@ header {
           h1 {
                margin-right: 0px;
                font-size: 12px;
-               width: 100px;
+               width: 80px;
                letter-spacing: 0;
                margin-left: 5px;
           }
@@ -359,19 +367,22 @@ header {
           li {
                margin-left: 8px;
                margin-right: 8px;
-               width: 50px;
+               width: 40px;
                a {
                     font-size: 10px;
                }
           }
      }
-     .nav-area-2 {         
-          .btn {
-               height: 30px;
-               width: 70px;
-               font-size: 10px;
-               margin-left: 0;             
-          }
+     .nav-area-2 { 
+          
+               .btn {
+                    height: 30px;
+                    width: 70px;
+                    font-size: 10px;
+                    margin-left: 0;  
+                    font-size: 10px;           
+               }
+                  
      }
      .collapsible-menu {
           display: none;
@@ -807,6 +818,27 @@ input:checked ~ .menu-content {
      .container-2 {
           .service {
                width: 90%;
+          }
+     }
+}
+@media screen and (min-width: 1030px) and (max-width: 1055px) {
+     .container-2 {
+          .service {
+               .sub-cards {
+                    height: 160px;
+               }
+          }
+     }
+}
+@media screen and (min-width: 950px) and (max-width: 1000px) {
+     .container-2 {
+          .service {
+               .sub-cards {
+                    height: 170px;
+                    .card {
+                         height: 160px;
+                    }
+               }
           }
      }
 }
