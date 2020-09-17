@@ -810,7 +810,57 @@ input:checked ~ .menu-content {
           }
      }
 }
-
+@media screen and (min-width: 1170px) and (max-width: 1200px) {
+     .container-2 {
+          .service {
+               .sub-cards {
+                    height: 180px;
+                    .card {
+                         height: 170px;
+                    }
+               }
+               .card-service {
+                    .card {
+                         height: 368px;
+                    }
+               }
+          }
+     }
+}
+@media screen and (min-width: 1275px) and (max-width: 1350px) {
+     .container-2 {
+          .service {
+               .sub-cards {
+                    height: 180px;
+                    .card {
+                         height: 170px;
+                    }
+               }
+               .card-service {
+                    .card {
+                         height: 360px;
+                    }
+               }
+          }
+     }
+}
+@media screen and (min-width: 1500px) and (max-width: 1550px) {
+     .container-2 {
+          .service {
+               .sub-cards {
+                    height: 170px;
+                    .card {
+                         height: 160px;
+                    }
+               }
+               .card-service {
+                    .card {
+                         height: 340px;
+                    }
+               }
+          }
+     }
+}
 
 // Middle image section
 .group-2 {
